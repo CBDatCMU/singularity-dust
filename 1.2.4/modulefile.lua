@@ -37,5 +37,5 @@ Tools included in this module are
 
 local package = "dust"
 local version = "1.2.4"
-local base    = pathJoin("/opt/packages",package,version)
+local base    = pathJoin("/containers",package,version)
 prepend_path("PATH", base)
