@@ -1,0 +1,18 @@
+Bootstrap: docker
+From: rust:slim-buster
+
+%labels
+    MAINTAINER icaoberg
+    EMAIL icaoberg@psc.edu
+    SUPPORT help@psc.edu
+    REPOSITORY https://github.com/CBDatCMU/singularity-dust
+    VERSION 1.2.4
+
+%post
+    rustup toolchain install 1.88.0
+    rustup default 1.88.0
+    cargo install --locked --version 1.2.4 du-dust
+    ln -s /usr/local/cargo/bin/dust /usr/local/bin/dust
+
+%runscript
+    dust "$@"

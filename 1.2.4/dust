@@ -1,0 +1,12 @@
+#!/bin/bash
+
+VERSION=1.2.4
+PACKAGE=dust
+TOOL=$PACKAGE
+DIRECTORY=$(dirname $0)
+
+if [ -f /containers/loader ]; then
+  source /containers/loader
+fi
+
+singularity exec $OPTIONS $DIRECTORY/singularity-$PACKAGE-$VERSION.sif $TOOL "$@"
