@@ -14,7 +14,7 @@ jobs:
       options: --privileged
     steps:
     - name: Check out code for the container build
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       
     - name: Install useful utilities
       run: apk update && apk add --no-cache tree figlet wget
