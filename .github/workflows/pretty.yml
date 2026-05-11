@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: Check out code
       uses: actions/checkout@v5
-      
+
     - name: Install useful utilities
       run: sudo apt-get install -y tree
 
@@ -17,7 +17,7 @@ jobs:
         if [ -f "$FILE" ]; then
             echo "File "$FILE" exists."
             exit 0
-        else 
+        else
             echo "File $FILE does not exist."
             exit 1
         fi
@@ -31,7 +31,7 @@ jobs:
             echo "Not using Apache License Version 2.0, January 2004"
             exit 1
         fi
-    
+
 
     - name: Checking if README file exists
       run: |
@@ -39,11 +39,11 @@ jobs:
         if [ -f "$FILE" ]; then
             echo "File "$FILE" exists."
             exit 0
-        else 
+        else
             echo "File $FILE does not exist."
             exit 1
         fi
-    
+
     - name: Checking if copyrighted to Pittsburgh Supercomputing Center
       run: |
         if grep --quiet "Pittsburgh Supercomputing Center. All Rights Reserved." README.md; then
@@ -57,10 +57,10 @@ jobs:
     - name: Checking if there exists at least one Singularity definition file
       run: |
         FILE=Singularity
-        if [ $(find . -name "$FILE" | wc -l) -gt 0 ]; then 
+        if [ $(find . -name "$FILE" | wc -l) -gt 0 ]; then
             echo "File "$FILE" was found.";
-            exit 0 
-        else 
+            exit 0
+        else
             echo "File "$FILE" was not found.";
             exit 1
         fi
@@ -79,10 +79,10 @@ jobs:
     - name: Checking if there exists at least one test script
       run: |
         FILE=test.sh
-        if [ $(find . -name "$FILE" | wc -l) -gt 0 ]; then 
+        if [ $(find . -name "$FILE" | wc -l) -gt 0 ]; then
             echo "File "$FILE" was found.";
-            exit 0 
-        else 
+            exit 0
+        else
             echo "File "$FILE" was not found.";
             exit 1
         fi
