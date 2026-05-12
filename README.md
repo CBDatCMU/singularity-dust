@@ -10,7 +10,7 @@
 
 Singularity recipe for [dust](https://github.com/bootandy/dust).
 
-## Installing the container on Bridges 2
+## Installing the container on lanec2
 Copy the
 
 * `SIF` file
