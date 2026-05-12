@@ -29,12 +29,6 @@ Run the script `build.sh` to build image locally.
 bash ./build.sh
 ````
 
-### To build the image remotely
-Run the script `rbuild.sh` to build image remotely.
-
-```
-bash ./rbuild.sh
-```
 
 ## To run tests
 To run the available tests, run the command
