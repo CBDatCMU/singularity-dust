@@ -1,9 +1,9 @@
-![Status](https://github.com/icaoberg/singularity-dust/actions/workflows/main.yml/badge.svg)
-![Status](https://github.com/icaoberg/singularity-dust/actions/workflows/pretty.yml/badge.svg)
-![Issue](https://img.shields.io/github/issues/icaoberg/singularity-dust)
-![forks](https://img.shields.io/github/forks/icaoberg/singularity-dust)
-![Stars](https://img.shields.io/github/stars/icaoberg/singularity-dust)
-![License](https://img.shields.io/github/license/icaoberg/singularity-dust)
+![Status](https://github.com/CBDatCMU/singularity-dust/actions/workflows/main.yml/badge.svg)
+![Status](https://github.com/CBDatCMU/singularity-dust/actions/workflows/pretty.yml/badge.svg)
+![Issue](https://img.shields.io/github/issues/CBDatCMU/singularity-dust)
+![forks](https://img.shields.io/github/forks/CBDatCMU/singularity-dust)
+![Stars](https://img.shields.io/github/stars/CBDatCMU/singularity-dust)
+![License](https://img.shields.io/github/license/CBDatCMU/singularity-dust)
 
 # singularity-dust
 ![Example](https://github.com/bootandy/dust/raw/master/media/snap.png)
